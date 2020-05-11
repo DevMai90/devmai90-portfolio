@@ -1,5 +1,6 @@
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-size: 10px; }
 
 *,
 *:before,
@@ -8,7 +9,29 @@ html {
 
 body {
   font-family: 'Raleway', sans-serif;
-  line-height: 1.5; }
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin: 0; }
+
+/** Navbar **/
+.navbar {
+  background-color: #767676;
+  font-size: 1.4rem;
+  height: 3rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 3rem 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+  .navbar .nav-item {
+    padding-right: 2rem; }
+  .navbar .nav-link {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease 0s; }
+  .navbar .nav-link:hover {
+    color: #464646; }
 
 section:nth-child(even) {
-  background-color: #0000001a; }
+  background-color: #f9f8fd; }
