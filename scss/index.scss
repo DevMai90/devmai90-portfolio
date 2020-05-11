@@ -1,5 +1,17 @@
-$primary-color: #444;
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
 body {
-  background: $primary-color;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5;
+}
+
+section:nth-child(even) {
+  background-color: #0000001a;
 }

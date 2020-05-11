@@ -1,2 +1,14 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
 body {
-  background: #444; }
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5; }
+
+section:nth-child(even) {
+  background-color: #0000001a; }
