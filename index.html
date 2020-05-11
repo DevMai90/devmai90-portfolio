@@ -15,6 +15,10 @@
       href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
+    />
   </head>
   <body>
     <!-- @todo: Transparent navbar and fade to color after scroll -->
@@ -73,20 +77,69 @@
         </div>
       </section>
 
-      <section id="skills">
-        <h1>Skills</h1>
+      <!-- @todo: Place each skill into a card. Bottom of card labels it as tool, framework, language, etc. SVG files for Ember and Redux-->
+      <section id="skills" class="skills-content">
+        <h2>Skills</h2>
+        <div class="skills-content__list">
+          <div class="skills-content__skill">
+            <!-- <span>HTML5</span> -->
+            <i class="devicon-html5-plain-wordmark"></i>
+          </div>
+          <div class="skills-content__skill">
+            <!-- <span>CSS3</span> -->
+            <i class="devicon-css3-plain-wordmark"></i>
+          </div>
+          <div class="skills-content__skill">
+            <i class="devicon-javascript-plain"></i>
+            <!-- <span>JavaScript</span> -->
+          </div>
+          <div class="skills-content__skill">
+            <i class="devicon-react-original-wordmark"></i>
+            <!-- <span>React</span> -->
+          </div>
+          <div class="skills-content__skill">
+            <i class="devicon-sass-original"></i>
+            <!-- <span>Sass</span> -->
+          </div>
+          <div class="skills-content__skill">
+            <!-- <span>Ember</span> -->
+            <img
+              src="https://icongr.am/devicon/ember-original-wordmark.svg?size=50&color=#2a2a2a"
+              alt=""
+            />
+          </div>
+          <div class="skills-content__skill">
+            <i class="devicon-nodejs-plain"></i>
+            <!-- <span>Node</span> -->
+          </div>
+          <div class="skills-content__skill">
+            <!-- <span>MongoDB</span> -->
+            <i class="devicon-mongodb-plain-wordmark"></i>
+          </div>
+          <div class="skills-content__skill">
+            <!-- <span>Git</span> -->
+            <i class="devicon-git-plain-wordmark"></i>
+          </div>
+          <div class="skills-content__skill">
+            <span>Redux</span>
+          </div>
+          <div class="skills-content__skill">
+            <!-- <span>Bootstrap</span> -->
+            <i class="devicon-bootstrap-plain-wordmark"></i>
+          </div>
+        </div>
       </section>
 
       <section id="projects">
-        <h1>Projects</h1>
+        <h2>Projects</h2>
       </section>
 
       <section id="about">
-        <h1>About</h1>
+        <h2>About</h2>
       </section>
 
       <section id="contact">
-        <h1>Contact</h1>
+        <h2>Contact</h2>
       </section>
     </main>
   </body>

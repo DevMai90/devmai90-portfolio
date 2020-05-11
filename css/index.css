@@ -13,6 +13,10 @@ body {
   line-height: 1.5;
   margin: 0; }
 
+h2 {
+  font-size: 3.2rem;
+  margin: 0; }
+
 section:nth-child(even) {
   background-color: #f9f8fd; }
 
@@ -60,3 +64,15 @@ section:nth-child(even) {
     background-color: #767676; }
   .home-content__link-buttons-projects {
     background-color: #1a1a1a; }
+
+.skills-content {
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+  .skills-content__title {
+    font-size: 2.4rem; }
+  .skills-content__list {
+    display: flex;
+    justify-content: center; }
+  .skills-content__skill {
+    font-size: 5rem; }
