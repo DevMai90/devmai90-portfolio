@@ -17,6 +17,7 @@
     />
   </head>
   <body>
+    <!-- @todo: Transparent navbar and fade to color after scroll -->
     <header>
       <nav>
         <ul class="navbar">
@@ -50,18 +51,24 @@
     </header>
 
     <main>
-      <section id="home">
-        <h1>David Mai</h1>
-        <p>Software Engineer</p>
-
-        <hr />
-
-        <div>
+      <!-- @todo: Animate buttons to enlarge and background image -->
+      <section id="home" class="home-content">
+        <h1 class="home-content__name">David Mai</h1>
+        <p class="home-content__occupation">Software Engineer</p>
+        <div class="home-content__link-buttons-container">
           <a href="#contact">
-            <button>Contact me</button>
+            <button
+              class="home-content__link-buttons home-content__link-buttons-contact"
+            >
+              Contact me
+            </button>
           </a>
           <a href="#projects">
-            <button>View my projects</button>
+            <button
+              class="home-content__link-buttons home-content__link-buttons-projects"
+            >
+              View my projects
+            </button>
           </a>
         </div>
       </section>

@@ -15,6 +15,10 @@ body {
   margin: 0;
 }
 
+section:nth-child(even) {
+  background-color: #f9f8fd;
+}
+
 /** Navbar **/
 .navbar {
   background-color: #767676;
@@ -42,6 +46,40 @@ body {
   }
 }
 
-section:nth-child(even) {
-  background-color: #f9f8fd;
+.home-content {
+  text-align: center;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+
+  &__name {
+    font-size: 4.8rem;
+    margin: 0;
+  }
+
+  &__occupation {
+    margin: 0;
+  }
+
+  &__link-buttons-container {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  &__link-buttons {
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.4rem;
+    padding: 1rem;
+    margin: 0.25rem;
+    min-width: 15rem;
+  }
+
+  &__link-buttons-contact {
+    background-color: #767676;
+  }
+
+  &__link-buttons-projects {
+    background-color: #1a1a1a;
+  }
 }
