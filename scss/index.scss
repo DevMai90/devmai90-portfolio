@@ -108,4 +108,23 @@ section:nth-child(even) {
   &__skill {
     font-size: 5rem;
   }
+
+  &__skill-card {
+    color: #1a1a1a;
+    background-color: transparent;
+    padding: 1rem;
+    width: 10rem;
+  }
+
+  &__skill-description {
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__skill-category {
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 0;
+  }
 }
