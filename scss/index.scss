@@ -128,3 +128,25 @@ section:nth-child(even) {
     margin: 0;
   }
 }
+
+// Project Section
+.project-content {
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__card {
+    border-style: solid;
+    border-width: thin;
+    border-color: #767676;
+    padding: 1rem;
+    margin: 2rem;
+    width: 40rem;
+    height: 30rem;
+  }
+}
