@@ -150,3 +150,23 @@ section:nth-child(even) {
     height: 30rem;
   }
 }
+
+// Content Section
+.contact-content {
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__email {
+    margin: 2rem;
+  }
+
+  &__connect {
+    margin: 2rem;
+  }
+}

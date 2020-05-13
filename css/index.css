@@ -105,3 +105,15 @@ section:nth-child(even) {
     margin: 2rem;
     width: 40rem;
     height: 30rem; }
+
+.contact-content {
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+  .contact-content__container {
+    display: flex;
+    justify-content: center; }
+  .contact-content__email {
+    margin: 2rem; }
+  .contact-content__connect {
+    margin: 2rem; }
