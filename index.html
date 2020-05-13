@@ -174,11 +174,12 @@
         </div>
       </section>
 
+      <!-- @todo: Format, form validation, and find service to send email -->
       <section id="contact" class="contact-content">
         <h2>Contact</h2>
         <div class="contact-content__container">
           <div class="contact-content__email">
-            <h3>Email</h3>
+            <span>Interested in contacting me? Email me at NL.David.Mai@gmail.com or fill out the contact form below!</span>
             <form action="submit">
               <div>
                 <label for="name">Name:</label>
@@ -190,7 +191,7 @@
               </div>
               <div>
                 <label for="subject">Subject:</label>
-                <input type="text" id="subject" plaeholder="Enter subject" required>
+                <input type="text" id="subject" placeholder="Enter subject" required>
               </div>
               <div>
                 <label for="message">Message:</label>
@@ -199,8 +200,18 @@
               <button type="submit">Send email</button>
             </form>
           </div>
-          <div class="contact-content__email">
-            <h3>Connect with me</h3>
+
+          <!-- Place links into specific cards and make entire card clickable -->
+          <div class="contact-content__connect">
+            <span>Interested in connecting with me? Visit me at one of the platforms below!</span>
+            <div class="contact-content__container">
+              <div class="contact-content__connect-card">
+                <img src="https://icongr.am/devicon/linkedin-plain.svg" alt="LinkedIn logo">
+              </div>
+              <div class="contact-content__connect-card">
+                <i class="devicon-github-plain"></i>
+              </div>
+            </div>
           </div>
         </div>
       </section>

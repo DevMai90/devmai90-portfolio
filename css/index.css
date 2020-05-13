@@ -117,3 +117,5 @@ section:nth-child(even) {
     margin: 2rem; }
   .contact-content__connect {
     margin: 2rem; }
+  .contact-content__connect-card {
+    font-size: 5rem; }
