@@ -127,6 +127,12 @@ section:nth-child(even) {
     padding: 0;
     margin: 0;
   }
+
+  &__skill-item {
+    height: 5rem;
+    width: 5rem;
+    color: #767676;
+  }
 }
 
 // Project Section
@@ -172,5 +178,10 @@ section:nth-child(even) {
 
   &__connect-card {
     font-size: 5rem;
+  }
+
+  &__connect-item {
+    height: 5rem;
+    width: 5rem;
   }
 }
