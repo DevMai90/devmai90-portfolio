@@ -73,7 +73,10 @@ section:nth-child(even) {
     font-size: 2.4rem; }
   .skills-content__list {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
   .skills-content__skill {
     font-size: 5rem; }
   .skills-content__skill-card {
