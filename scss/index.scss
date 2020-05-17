@@ -38,6 +38,8 @@ section:nth-child(even) {
 
   .nav-item {
     padding-right: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   .nav-link {
@@ -48,6 +50,7 @@ section:nth-child(even) {
 
   .nav-link:hover {
     color: #464646;
+    font-size: 1.6rem;
   }
 }
 
@@ -79,6 +82,12 @@ section:nth-child(even) {
     padding: 1rem;
     margin: 0.25rem;
     min-width: 15rem;
+    transition: all 0.2s ease 0s;
+  }
+
+  &__link-buttons:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 3px #464646;
   }
 
   &__link-buttons-contact {
@@ -105,6 +114,7 @@ section:nth-child(even) {
   &__list {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -149,6 +159,7 @@ section:nth-child(even) {
   &__list {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
   }
 
   &__card {
@@ -183,6 +194,13 @@ section:nth-child(even) {
 
   &__connect-card {
     font-size: 5rem;
+    margin: 1rem;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+  }
+
+  &__connect-card:hover {
+    transform: scale(1.2);
   }
 
   &__connect-item {
