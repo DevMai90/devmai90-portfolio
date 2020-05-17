@@ -83,10 +83,12 @@ section:nth-child(even) {
 
   &__link-buttons-contact {
     background-color: #767676;
+    text-decoration: none;
   }
 
   &__link-buttons-projects {
     background-color: #1a1a1a;
+    text-decoration: none;
   }
 }
 

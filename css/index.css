@@ -61,9 +61,11 @@ section:nth-child(even) {
     margin: 0.25rem;
     min-width: 15rem; }
   .home-content__link-buttons-contact {
-    background-color: #767676; }
+    background-color: #767676;
+    text-decoration: none; }
   .home-content__link-buttons-projects {
-    background-color: #1a1a1a; }
+    background-color: #1a1a1a;
+    text-decoration: none; }
 
 .skills-content {
   text-align: center;
