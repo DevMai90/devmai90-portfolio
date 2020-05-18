@@ -11,7 +11,8 @@ body {
   font-family: 'Raleway', sans-serif;
   font-size: 1.6rem;
   line-height: 1.5;
-  margin: 0; }
+  margin: 0;
+  padding: 0; }
 
 h2 {
   font-size: 3.2rem;
@@ -25,16 +26,16 @@ section:nth-child(even) {
   background-color: #767676;
   font-size: 1.4rem;
   height: 3rem;
-  list-style-type: none;
-  margin: 0;
-  padding: 3rem 1rem;
   display: flex;
+  align-items: center;
   justify-content: flex-end;
-  align-items: center; }
+  padding: 3rem 1rem; }
+  .navbar .nav-list {
+    list-style-type: none;
+    display: flex; }
   .navbar .nav-item {
-    padding-right: 2rem;
-    margin-left: 1rem;
-    margin-right: 1rem; }
+    padding: 1rem 2rem;
+    height: 4rem; }
   .navbar .nav-link {
     color: #fff;
     text-decoration: none;
