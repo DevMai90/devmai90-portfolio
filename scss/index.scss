@@ -27,7 +27,7 @@ section:nth-child(even) {
 
 /** Navbar **/
 .navbar {
-  background-color: #767676;
+  background-color: #005ab3;
   font-size: 1.4rem;
   height: 3rem;
   display: flex;
@@ -52,7 +52,7 @@ section:nth-child(even) {
   }
 
   .nav-link:hover {
-    color: #464646;
+    color: #f9f8fd;
     font-size: 1.6rem;
   }
 }
@@ -94,7 +94,7 @@ section:nth-child(even) {
   }
 
   &__link-buttons-contact {
-    background-color: #767676;
+    background-color: #005ab3;
     text-decoration: none;
   }
 
