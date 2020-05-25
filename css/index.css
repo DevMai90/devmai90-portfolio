@@ -123,17 +123,20 @@ section:nth-child(even) {
   padding-top: 3rem;
   padding-bottom: 3rem; }
   .project-content__list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; }
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    width: 90%;
+    margin: auto;
+    margin-top: 2rem; }
   .project-content__card {
     border-style: solid;
     border-width: thin;
     border-color: #767676;
-    padding: 1rem;
-    margin: 2rem;
-    width: 40rem;
     height: 30rem; }
+  .project-content__image {
+    width: 100%;
+    height: 100%; }
 
 .contact-content {
   text-align: center;
