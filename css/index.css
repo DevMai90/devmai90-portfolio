@@ -142,9 +142,17 @@ section:nth-child(even) {
   text-align: center;
   padding-top: 3rem;
   padding-bottom: 3rem; }
+  .contact-content p {
+    margin: 0; }
+  .contact-content form {
+    margin-top: 1rem; }
   .contact-content__container {
-    display: flex;
-    justify-content: center; }
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: auto;
+    text-align: left;
+    width: 70%; }
   .contact-content__email {
     margin: 2rem; }
   .contact-content__connect {
@@ -153,9 +161,7 @@ section:nth-child(even) {
     font-size: 5rem;
     margin: 1rem;
     transition: all 0.3s ease 0s;
-    cursor: pointer; }
+    cursor: pointer;
+    max-width: 5rem; }
   .contact-content__connect-card:hover {
     transform: scale(1.2); }
-  .contact-content__connect-item {
-    height: 5rem;
-    width: 5rem; }

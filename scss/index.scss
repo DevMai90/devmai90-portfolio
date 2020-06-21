@@ -200,9 +200,21 @@ section:nth-child(even) {
   padding-top: 3rem;
   padding-bottom: 3rem;
 
+  p {
+    margin: 0;
+  }
+
+  form {
+    margin-top: 1rem;
+  }
+
   &__container {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: auto;
+    text-align: left;
+    width: 70%;
   }
 
   &__email {
@@ -218,6 +230,7 @@ section:nth-child(even) {
     margin: 1rem;
     transition: all 0.3s ease 0s;
     cursor: pointer;
+    max-width: 5rem;
   }
 
   &__connect-card:hover {
@@ -225,7 +238,7 @@ section:nth-child(even) {
   }
 
   &__connect-item {
-    height: 5rem;
-    width: 5rem;
+    // height: 5rem;
+    // width: 5rem;
   }
 }
