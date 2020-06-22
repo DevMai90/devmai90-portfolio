@@ -243,6 +243,7 @@ section:nth-child(even) {
     background-color: #005ab3;
     border: 0;
     color: #fff;
+    font-family: 'Raleway', sans-serif;
     text-decoration: none;
     cursor: pointer;
     font-size: 1.4rem;
@@ -284,4 +285,34 @@ section:nth-child(even) {
   //   // height: 5rem;
   //   // width: 5rem;
   // }
+}
+
+@media (max-width: 992px) {
+  .project-content {
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .contact-content {
+    &__container {
+      grid-template-columns: 1fr;
+    }
+
+    &__form {
+      grid-template-columns: 1fr;
+    }
+
+    &__form-full {
+      grid-column: auto;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .project-content {
+    &__list {
+      grid-template-columns: 1fr;
+    }
+  }
 }
