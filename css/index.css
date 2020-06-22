@@ -41,7 +41,8 @@ section:nth-child(even) {
     text-decoration: none;
     transition: all 0.3s ease 0s;
     padding-bottom: 2px; }
-  .navbar .nav-link:hover {
+  .navbar .nav-link:hover,
+  .navbar .nav-link:focus {
     color: #f9f8fd;
     font-size: 1.6rem;
     border-bottom: 1px solid; }
@@ -75,7 +76,7 @@ section:nth-child(even) {
     margin: 0.25rem;
     min-width: 15rem;
     transition: all 0.2s ease 0s; }
-  .home-content__link-buttons:hover {
+  .home-content__link-buttons:hover, .home-content__link-buttons:focus {
     transform: scale(1.1);
     box-shadow: 0 0 3px #464646; }
   .home-content__link-buttons-contact {
@@ -178,7 +179,7 @@ section:nth-child(even) {
     margin: 0.25rem;
     min-width: 15rem;
     transition: all 0.2s ease 0s; }
-  .contact-content__form-submit:hover {
+  .contact-content__form-submit:hover, .contact-content__form-submit:focus {
     transform: scale(1.1);
     box-shadow: 0 0 3px #464646; }
   .contact-content__email {
@@ -191,5 +192,5 @@ section:nth-child(even) {
     transition: all 0.3s ease 0s;
     cursor: pointer;
     max-width: 5rem; }
-  .contact-content__connect-card:hover {
+  .contact-content__connect-card:hover, .contact-content__connect-card:focus {
     transform: scale(1.2); }
