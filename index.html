@@ -266,10 +266,13 @@
               <a href="mailto:nl.david.mai@gmail.com">NL.David.Mai@gmail.com</a>
             </p>
             <p>Or fill out the form below</p>
-            <form action="submit">
+            <form action="submit" class="contact-content__form">
               <div>
-                <label for="name">Name:</label>
+                <label class="contact-content__form-label" for="name"
+                  >Name:</label
+                >
                 <input
+                  class="contact-content__form-input"
                   type="text"
                   id="name"
                   placeholder="Enter your name"
@@ -277,8 +280,11 @@
                 />
               </div>
               <div>
-                <label for="email">Email:</label>
+                <label class="contact-content__form-label" for="email"
+                  >Email:</label
+                >
                 <input
+                  class="contact-content__form-input"
                   type="text"
                   id="email"
                   placeholder="Enter your email"
@@ -286,8 +292,11 @@
                 />
               </div>
               <div>
-                <label for="subject">Subject:</label>
+                <label class="contact-content__form-label" for="subject"
+                  >Subject:</label
+                >
                 <input
+                  class="contact-content__form-input"
                   type="text"
                   id="subject"
                   placeholder="Enter subject"
@@ -295,8 +304,23 @@
                 />
               </div>
               <div>
-                <label for="message">Message:</label>
+                <label class="contact-content__form-label" for="subject"
+                  >Phone:</label
+                >
+                <input
+                  class="contact-content__form-input"
+                  type="text"
+                  id="phone"
+                  placeholder="Enter phone number"
+                  required
+                />
+              </div>
+              <div class="contact-content__form-full">
+                <label class="contact-content__form-label" for="message"
+                  >Message:</label
+                >
                 <textarea
+                  class="contact-content__form-textarea"
                   name="name"
                   id="name"
                   cols="30"
@@ -305,11 +329,12 @@
                   required
                 ></textarea>
               </div>
-              <button type="submit">Send email</button>
+              <button class="contact-content__form-submit" type="submit">
+                Send email
+              </button>
             </form>
           </div>
 
-          <!-- Place links into specific cards and make entire card clickable -->
           <div class="contact-content__connect">
             <span
               >Interested in connecting with me? Visit me at one of the

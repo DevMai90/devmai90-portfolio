@@ -170,9 +170,6 @@ section:nth-child(even) {
   padding-bottom: 3rem;
 
   &__list {
-    // display: flex;
-    // justify-content: center;
-    // flex-wrap: wrap;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
@@ -204,10 +201,6 @@ section:nth-child(even) {
     margin: 0;
   }
 
-  form {
-    margin-top: 1rem;
-  }
-
   &__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -215,6 +208,50 @@ section:nth-child(even) {
     margin: auto;
     text-align: left;
     width: 70%;
+  }
+
+  &__form {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  &__form-textarea {
+    font-family: 'Raleway', sans-serif;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  &__form-full {
+    grid-column: 1 / 3;
+  }
+
+  &__form-label {
+    display: block;
+  }
+
+  &__form-input {
+    width: 100%;
+    padding: 1rem 1rem 0.5rem 1rem;
+  }
+
+  &__form-submit {
+    background-color: #005ab3;
+    border: 0;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.4rem;
+    padding: 1rem;
+    margin: 0.25rem;
+    min-width: 15rem;
+    transition: all 0.2s ease 0s;
+  }
+
+  &__form-submit:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 3px #464646;
   }
 
   &__email {
@@ -237,8 +274,8 @@ section:nth-child(even) {
     transform: scale(1.2);
   }
 
-  &__connect-item {
-    // height: 5rem;
-    // width: 5rem;
-  }
+  // &__connect-item {
+  //   // height: 5rem;
+  //   // width: 5rem;
+  // }
 }
