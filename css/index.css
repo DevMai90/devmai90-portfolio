@@ -166,8 +166,9 @@ section:nth-child(even) {
   .contact-content__form-label {
     display: block; }
   .contact-content__form-input {
-    width: 100%;
-    padding: 1rem 1rem 0.5rem 1rem; }
+    font-family: 'Raleway', sans-serif;
+    padding: 1rem 1rem 0.5rem 1rem;
+    width: 100%; }
   .contact-content__form-submit {
     background-color: #005ab3;
     border: 0;

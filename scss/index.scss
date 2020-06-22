@@ -234,8 +234,9 @@ section:nth-child(even) {
   }
 
   &__form-input {
-    width: 100%;
+    font-family: 'Raleway', sans-serif;
     padding: 1rem 1rem 0.5rem 1rem;
+    width: 100%;
   }
 
   &__form-submit {
