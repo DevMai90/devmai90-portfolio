@@ -1,0 +1,43 @@
+/** Navbar **/
+.nav {
+  background-color: transparent;
+  font-size: 1.4rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 3rem 1rem;
+  transition: all 0.3s ease;
+
+  &--active {
+    background-color: $primary-color;
+    transition: all 0.3s ease;
+  }
+
+  &__list {
+    list-style-type: none;
+    display: flex;
+  }
+
+  &__item {
+    padding: 1rem 2rem;
+    height: 4rem;
+  }
+
+  &__link {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    padding-bottom: 2px;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: #f9f8fd;
+    font-size: 1.6rem;
+    border-bottom: 1px solid;
+  }
+}

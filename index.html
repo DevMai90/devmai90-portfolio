@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>David Mai - Software Engineer</title>
-    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
@@ -23,25 +23,25 @@
   <body>
     <!-- @todo: Transparent navbar and fade to color after scroll -->
     <header>
-      <nav class="navbar">
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a href="#home" class="nav-link">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link">
               <i class="fas fa-home" aria-hidden="true"></i> Home
             </a>
           </li>
-          <li class="nav-item">
-            <a href="#skills" class="nav-link">
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">
               <i class="fas fa-list" aria-hidden="true"></i> Skills
             </a>
           </li>
-          <li class="nav-item">
-            <a href="#projects" class="nav-link">
+          <li class="nav__item">
+            <a href="#projects" class="nav__link">
               <i class="fas fa-code" aria-hidden="true"></i> Projects
             </a>
           </li>
-          <li class="nav-item">
-            <a href="#contact" class="nav-link">
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">
               <i class="fas fa-envelope" aria-hidden="true"></i> Contact
             </a>
           </li>
@@ -266,7 +266,11 @@
               <a href="mailto:nl.david.mai@gmail.com">NL.David.Mai@gmail.com</a>
             </p>
             <p>Or fill out the form below</p>
-            <form action="submit" class="contact-content__form">
+            <form
+              action="https://formspree.io/xvowqyqk"
+              method="POST"
+              class="contact-content__form"
+            >
               <div>
                 <label class="contact-content__form-label" for="name"
                   >Name:</label
@@ -339,7 +343,7 @@
               >Interested in connecting with me? Visit me at one of the
               platforms below!</span
             >
-            <div class="contact-content__container">
+            <div class="contact-content__connect-container">
               <div class="contact-content__connect-card">
                 <a
                   href="https://www.linkedin.com/in/nldavidmai"
