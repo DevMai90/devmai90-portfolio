@@ -54,9 +54,9 @@ h2 {
 section:nth-child(even) {
   background-color: #f9f8fd; }
 
-section:not(:first-child):target {
-  margin-top: -60px;
-  padding-top: 60px; }
+.anchor {
+  padding-top: 60px;
+  margin-top: -60px; }
 
 .home-content {
   color: #fff;

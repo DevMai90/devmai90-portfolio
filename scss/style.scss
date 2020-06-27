@@ -29,10 +29,9 @@ section:nth-child(even) {
   background-color: #f9f8fd;
 }
 
-// Padding when clicking on nav links
-section:not(:first-child):target {
-  margin-top: -60px;
+.anchor {
   padding-top: 60px;
+  margin-top: -60px;
 }
 
 // Home Section
