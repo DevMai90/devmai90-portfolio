@@ -31,11 +31,13 @@
       padding: 1rem;
       border-radius: 2.5rem; }
     .nav__link--active:hover, .nav__link--active:focus {
-      font-size: 1.6rem;
       color: #005ab3;
-      background-color: #fff;
-      padding: 1rem;
-      border-radius: 2.5rem; }
+      background-color: #fff; }
+    .nav__link--in-view {
+      padding-bottom: 0.1rem;
+      border-bottom: 1px solid; }
+    .nav__link--in-view:hover, .nav__link--in-view:focus {
+      border-bottom: none; }
 
 html {
   box-sizing: border-box;

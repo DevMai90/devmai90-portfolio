@@ -43,11 +43,18 @@
 
     &--active:hover,
     &--active:focus {
-      font-size: 1.6rem;
       color: $primary-color;
       background-color: #fff;
-      padding: 1rem;
-      border-radius: 2.5rem;
+    }
+
+    &--in-view {
+      padding-bottom: 0.1rem;
+      border-bottom: 1px solid;
+    }
+
+    &--in-view:hover,
+    &--in-view:focus {
+      border-bottom: none;
     }
   }
 }
