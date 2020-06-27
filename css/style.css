@@ -32,7 +32,8 @@
 
 html {
   box-sizing: border-box;
-  font-size: 10px; }
+  font-size: 10px;
+  scroll-behavior: smooth; }
 
 *,
 *:before,
@@ -52,6 +53,10 @@ h2 {
 
 section:nth-child(even) {
   background-color: #f9f8fd; }
+
+section:not(:first-child):target {
+  margin-top: -60px;
+  padding-top: 60px; }
 
 .home-content {
   color: #fff;
