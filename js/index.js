@@ -22,8 +22,6 @@ document.addEventListener(
   () => {
     const sections = document.querySelectorAll('section');
     const menu_links = document.querySelectorAll('.nav__link');
-    console.log(sections);
-    console.log(menu_links);
 
     // functions to add and remove the in-view class from links as appropriate
     const makeActive = (link) =>
@@ -56,7 +54,15 @@ document.addEventListener(
       // only if the section has changed
       // remove active class from all menu links
       // and then apply it to the link for the current section
-      if (current !== currentActive) {
+      if (
+        // Set last section to be active if at bottom of screen
+        window.innerHeight + window.scrollY >=
+        document.body.offsetHeight
+      ) {
+        removeAllActive();
+        makeActive(sections.length - 1);
+        currentActive = sections.length - 1;
+      } else if (current !== currentActive) {
         removeAllActive();
         currentActive = current;
         makeActive(current);
