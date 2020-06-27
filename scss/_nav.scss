@@ -31,13 +31,23 @@
     color: #fff;
     text-decoration: none;
     transition: all 0.3s ease 0s;
-    padding-bottom: 2px;
-  }
 
-  &__link:hover,
-  &__link:focus {
-    color: #f9f8fd;
-    font-size: 1.6rem;
-    border-bottom: 1px solid;
+    &:hover,
+    &:focus {
+      color: #f9f8fd;
+      font-size: 1.6rem;
+      background-color: $primary-color;
+      padding: 1rem;
+      border-radius: 2.5rem;
+    }
+
+    &--active:hover,
+    &--active:focus {
+      font-size: 1.6rem;
+      color: $primary-color;
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 2.5rem;
+    }
   }
 }

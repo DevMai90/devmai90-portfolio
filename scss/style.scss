@@ -134,7 +134,7 @@ section:nth-child(even) {
   &__skill-item {
     height: 5rem;
     width: 5rem;
-    color: #767676;
+    color: $secondary-color;
   }
 }
 
@@ -156,7 +156,7 @@ section:nth-child(even) {
   &__card {
     border-style: solid;
     border-width: thin;
-    border-color: #767676;
+    border-color: $secondary-color;
     height: 30rem;
   }
 

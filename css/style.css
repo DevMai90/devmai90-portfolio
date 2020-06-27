@@ -23,12 +23,19 @@
   .nav__link {
     color: #fff;
     text-decoration: none;
-    transition: all 0.3s ease 0s;
-    padding-bottom: 2px; }
-  .nav__link:hover, .nav__link:focus {
-    color: #f9f8fd;
-    font-size: 1.6rem;
-    border-bottom: 1px solid; }
+    transition: all 0.3s ease 0s; }
+    .nav__link:hover, .nav__link:focus {
+      color: #f9f8fd;
+      font-size: 1.6rem;
+      background-color: #005ab3;
+      padding: 1rem;
+      border-radius: 2.5rem; }
+    .nav__link--active:hover, .nav__link--active:focus {
+      font-size: 1.6rem;
+      color: #005ab3;
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 2.5rem; }
 
 html {
   box-sizing: border-box;
