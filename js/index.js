@@ -1,16 +1,19 @@
 // Change navbar color on scroll
 const nav = document.querySelector('.nav');
 const navItems = document.querySelectorAll('.nav__link');
+const navList = document.querySelector('.nav__list');
 
 window.onscroll = () => {
   const top = window.scrollY;
   if (top >= home.offsetHeight * 0.6) {
     nav.classList.add('nav--active');
+    navList.classList.add('nav__list--active');
     navItems.forEach((item) => {
       item.classList.add('nav__link--active');
     });
   } else {
     nav.classList.remove('nav--active');
+    navList.classList.remove('nav__list--active');
     navItems.forEach((item) => {
       item.classList.remove('nav__link--active');
     });
@@ -71,3 +74,32 @@ document.addEventListener(
   },
   false
 );
+
+const navSlide = () => {
+  const menuBtn = document.querySelector('.menu-btn');
+  const menuBtnIcon = document.querySelector('.menu-btn__icon');
+  const nav = document.querySelector('.nav__list');
+  const navLinks = document.querySelectorAll('.nav__link');
+
+  menuBtn.addEventListener('click', () => {
+    if (menuBtnIcon.classList.contains('fa-bars')) {
+      menuBtnIcon.classList.remove('fa-bars');
+      menuBtnIcon.classList.add('fa-times');
+    } else {
+      menuBtnIcon.classList.remove('fa-times');
+      menuBtnIcon.classList.add('fa-bars');
+    }
+    nav.classList.toggle('nav__list--menu');
+    navLinks.forEach((link, index) => {
+      if (link.style.animation) {
+        link.style.animation = '';
+      } else {
+        link.style.animation = `navLinkFade 0.5s ease forwards ${
+          index / 7 + 0.3
+        }s`;
+      }
+    });
+  });
+};
+
+navSlide();
