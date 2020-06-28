@@ -1,0 +1,103 @@
+.contact-content {
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  p {
+    margin: 0;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    margin: auto;
+    text-align: left;
+    width: 70%;
+  }
+
+  &__form {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  &__form-textarea {
+    font-family: 'Raleway', sans-serif;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  &__form-full {
+    grid-column: 1 / 3;
+  }
+
+  &__form-label {
+    display: block;
+  }
+
+  &__form-input {
+    font-family: 'Raleway', sans-serif;
+    padding: 1rem 1rem 0.5rem 1rem;
+    width: 100%;
+  }
+
+  &__form-submit {
+    background-color: $primary-color;
+    border: 0;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.4rem;
+    padding: 1rem;
+    margin: 0.25rem;
+    min-width: 15rem;
+    transition: all 0.2s ease 0s;
+  }
+
+  &__form-submit:hover,
+  &__form-submit:focus {
+    transform: scale(1.1);
+    box-shadow: 0 0 3px #464646;
+  }
+
+  &__email {
+    margin: 2rem;
+  }
+
+  &__connect {
+    margin: 2rem;
+  }
+
+  &__connect-card {
+    font-size: 5rem;
+    margin: 1rem;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    max-width: 5rem;
+  }
+
+  &__connect-card:hover,
+  // todo not transforming with focus
+  &__connect-card:focus {
+    transform: scale(1.2);
+  }
+}
+
+@media (max-width: $medium-screen) {
+  .contact-content {
+    &__container {
+      grid-template-columns: 1fr;
+    }
+
+    &__form {
+      grid-template-columns: 1fr;
+    }
+
+    &__form-full {
+      grid-column: auto;
+    }
+  }
+}

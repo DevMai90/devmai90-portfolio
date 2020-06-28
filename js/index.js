@@ -5,7 +5,7 @@ const navList = document.querySelector('.nav__list');
 
 window.onscroll = () => {
   const top = window.scrollY;
-  if (top >= home.offsetHeight * 0.6) {
+  if (top >= home.offsetHeight * 0.35) {
     nav.classList.add('nav--active');
     navList.classList.add('nav__list--active');
     navItems.forEach((item) => {

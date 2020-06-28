@@ -1,0 +1,47 @@
+.skills-content {
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  &__title {
+    font-size: 2.4rem;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__skill {
+    font-size: 5rem;
+  }
+
+  &__skill-card {
+    color: #1a1a1a;
+    background-color: transparent;
+    padding: 1rem;
+    width: 10rem;
+  }
+
+  &__skill-description {
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__skill-category {
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__skill-item {
+    height: 5rem;
+    width: 5rem;
+    color: $secondary-color;
+  }
+}
