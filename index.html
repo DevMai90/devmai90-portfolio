@@ -52,7 +52,6 @@
     </header>
 
     <main>
-      <!-- @todo: Animate buttons to enlarge and background image -->
       <section id="home" class="home-content">
         <div class="dark-overlay">
           <h1 class="home-content__name">David Mai</h1>
@@ -74,7 +73,6 @@
         </div>
       </section>
 
-      <!-- @todo: Place each skill into a card. Bottom of card labels it as tool, framework, language, etc. SVG files for Ember and Redux-->
       <section class="skills-content">
         <h2 id="skills" class="anchor">Skills</h2>
         <ul class="skills-content__list">
@@ -269,9 +267,10 @@
             </p>
             <p>Or fill out the form below</p>
             <form
-              action="https://formspree.io/xvowqyqk"
+              name="contact"
               method="POST"
               class="contact-content__form"
+              data-netlify="true"
             >
               <div>
                 <label class="contact-content__form-label" for="name"
@@ -298,7 +297,7 @@
                 />
               </div>
               <div>
-                <label class="contact-content__form-label" for="subject"
+                <label class="contact-content__form-label" for="phone"
                   >Phone:</label
                 >
                 <input
