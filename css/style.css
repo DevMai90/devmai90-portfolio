@@ -109,23 +109,6 @@
     display: flex;
     justify-content: center;
     padding: 1rem; }
-  .home-content__link-buttons {
-    color: #fff;
-    cursor: pointer;
-    font-size: 1.4rem;
-    padding: 1rem;
-    margin: 0.25rem;
-    min-width: 15rem;
-    transition: all 0.2s ease 0s; }
-  .home-content__link-buttons:hover, .home-content__link-buttons:focus {
-    transform: scale(1.1);
-    box-shadow: 0 0 3px #464646; }
-  .home-content__link-buttons-contact {
-    background-color: #005ab3;
-    text-decoration: none; }
-  .home-content__link-buttons-projects {
-    background-color: #1a1a1a;
-    text-decoration: none; }
 
 .skills-content {
   text-align: center;
@@ -170,7 +153,7 @@
     margin: auto;
     margin-top: 2rem; }
   .project-content__card {
-    box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 4px 8px 0 rgba(70, 70, 70, 0.3);
     position: relative; }
     .project-content__card--overlay::before {
       content: '\A';
@@ -183,24 +166,33 @@
       opacity: 0;
       transition: all 0.5s; }
     .project-content__card--overlay:hover::before {
-      opacity: 0.8; }
+      opacity: 0.9; }
+  .project-content__image {
+    width: 100%;
+    height: 100%;
+    vertical-align: top; }
   .project-content__card-details {
     color: white;
-    font-size: 20px;
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    text-align: center;
+    text-align: left;
+    padding: 1rem 2rem;
     opacity: 0; }
     .project-content__card-details:hover {
       opacity: 1;
       z-index: 5; }
-  .project-content__image {
-    width: 100%;
-    height: 100%;
-    vertical-align: top; }
+  .project-content__card-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0; }
+  .project-content__link-buttons-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem; }
 
 @media (max-width: 1200px) {
   .project-content__list {
@@ -215,7 +207,12 @@
 @media (max-width: 576px) {
   .project-content__card {
     height: 200px; }
+  .project-content__card-title {
+    font-size: 2rem;
+    text-align: center; }
   .project-content__card-about {
+    display: none; }
+  .project-content__card-tech {
     display: none; }
   .project-content__image {
     object-position: top; } }
@@ -285,6 +282,23 @@
     grid-template-columns: 1fr; }
   .contact-content__form-full {
     grid-column: auto; } }
+
+.btn {
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.4rem;
+  padding: 1rem;
+  margin: 0.25rem;
+  min-width: 15rem;
+  transition: all 0.2s ease 0s;
+  text-decoration: none; }
+  .btn:hover, .btn:focus {
+    transform: scale(1.1);
+    box-shadow: 0 0 3px #464646; }
+  .btn--primary {
+    background-color: #005ab3; }
+  .btn--dark {
+    background-color: #1a1a1a; }
 
 html {
   box-sizing: border-box;

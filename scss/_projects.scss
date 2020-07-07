@@ -13,7 +13,7 @@
   }
 
   &__card {
-    box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 4px 8px 0 rgba(70, 70, 70, 0.3);
     position: relative;
 
     &--overlay {
@@ -30,20 +30,26 @@
       }
 
       &:hover::before {
-        opacity: 0.8;
+        opacity: 0.9;
       }
     }
   }
 
+  &__image {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+  }
+
   &__card-details {
     color: white;
-    font-size: 20px;
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    text-align: center;
+    text-align: left;
+    padding: 1rem 2rem;
     opacity: 0;
 
     &:hover {
@@ -52,10 +58,17 @@
     }
   }
 
-  &__image {
-    width: 100%;
-    height: 100%;
-    vertical-align: top;
+  &__card-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  &__link-buttons-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
   }
 }
 
@@ -85,8 +98,16 @@
       height: 200px;
     }
 
+    &__card-title {
+      font-size: 2rem;
+      text-align: center;
+    }
+
     &__card-about {
-      // visibility: hidden;
+      display: none;
+    }
+
+    &__card-tech {
       display: none;
     }
 

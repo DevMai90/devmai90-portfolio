@@ -57,16 +57,10 @@
           <h1 class="home-content__name">David Mai</h1>
           <p class="home-content__occupation">Software Engineer</p>
           <div class="home-content__link-buttons-container">
-            <a
-              href="#contact"
-              class="home-content__link-buttons home-content__link-buttons-contact"
-            >
+            <a href="#contact" class="btn btn--primary">
               Contact me
             </a>
-            <a
-              href="#projects"
-              class="home-content__link-buttons home-content__link-buttons-projects"
-            >
+            <a href="#projects" class="btn btn--dark">
               View my projects
             </a>
           </div>
@@ -221,7 +215,7 @@
         </ul>
       </section>
 
-      <!-- @todo: Link out to separate project page filled with details -->
+      <!-- @todo: Link out to separate project page filled with project details -->
       <section class="project-content">
         <h2 id="projects" class="anchor">Projects</h2>
         <div class="project-content__list">
@@ -233,17 +227,22 @@
             />
             <div class="project-content__card-details">
               <h3 class="project-content__card-title">Dev Connector</h3>
-              <span class="project-content__card-tech">
-                1 2 3 4 5
-              </span>
               <p class="project-content__card-about">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
-                perspiciatis? Consectetur itaque id expedita consequuntur?
+                This project extended Brad Traversy's MERN stack course with
+                additional features not found in the original project. The
+                application is a professional social networking site where
+                developers can share their skills and work experiences. Some
+                features that I've added include editing education/experience
+                fields, create job postings, and uploading a resume to AWS.
               </p>
+              <small class="project-content__card-tech">
+                Technologies used: HTML, JS, CSS, React, Redux, Node, Express,
+                MongoDB, Mongoose, AWS, Multer, Bcrypt, and JWT.
+              </small>
               <div class="project-content__link-buttons-container">
                 <a
                   href="https://peaceful-wildwood-84800.herokuapp.com/"
-                  class="project-content__link-buttons project-content__link-buttons-projects"
+                  class="btn btn--dark"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -258,6 +257,27 @@
               alt="PM Autoworks project"
               class="project-content__image"
             />
+            <div class="project-content__card-details">
+              <h3 class="project-content__card-title">PM Autoworks</h3>
+              <p class="project-content__card-about">
+                Frontend application built on React for a local automotive shop
+                in San Jose, California. The site utilizies third party APIs
+                from Google Maps and Yelp Fusion.
+              </p>
+              <small class="project-content__card-tech">
+                Technologies used: HTML, JS, CSS, React, and Bootstrap 4.
+              </small>
+              <div class="project-content__link-buttons-container">
+                <a
+                  href="https://devmai90.github.io/pm-autoworks/"
+                  class="btn btn--dark"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  View project
+                </a>
+              </div>
+            </div>
           </div>
           <div class="project-content__card project-content__card--overlay">
             <img
@@ -265,6 +285,28 @@
               alt="Hangman project"
               class="project-content__image"
             />
+            <div class="project-content__card-details">
+              <h3 class="project-content__card-title">Hangman</h3>
+              <p class="project-content__card-about">
+                Childhood Hangman utilizing utilizing React hooks and an API
+                call to a third party word bank. The game allows you six chances
+                to guess the mystery word. Note that the third party word bank
+                API is currently disabled.
+              </p>
+              <small class="project-content__card-tech">
+                Technologies used: HTML, JS, CSS, React, Redux, and Bootstrap 4.
+              </small>
+              <div class="project-content__link-buttons-container">
+                <a
+                  href="https://github.com/DevMai90/hangman"
+                  class="btn btn--dark"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  View project
+                </a>
+              </div>
+            </div>
           </div>
           <div class="project-content__card project-content__card--overlay">
             <img
@@ -272,6 +314,28 @@
               alt="Weather App project"
               class="project-content__image"
             />
+            <div class="project-content__card-details">
+              <h3 class="project-content__card-title">Weather App</h3>
+              <p class="project-content__card-about">
+                Weather application that searches for your location by zip code
+                or geolocation. The application is built out using React for the
+                frontend, Context API for global state mangement, and
+                OpenWeather API for weather forecasts.
+              </p>
+              <small class="project-content__card-tech">
+                Technologies used: HTML, JS, CSS, React, and Bootstrap 4.
+              </small>
+              <div class="project-content__link-buttons-container">
+                <a
+                  href="https://devmai90.github.io/React-Weather-App/"
+                  class="btn btn--dark"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  View project
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
