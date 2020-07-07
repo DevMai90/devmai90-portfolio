@@ -171,79 +171,54 @@
     margin-top: 2rem; }
   .project-content__card {
     box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2);
-    position: relative;
-    width: 100%;
-    height: 350px; }
-    .project-content__card::before {
-      content: '';
+    position: relative; }
+    .project-content__card--overlay::before {
+      content: '\A';
       position: absolute;
-      top: 0;
-      left: 0;
       width: 100%;
       height: 100%;
-      display: block;
+      top: 0;
+      left: 0;
       background: #005ab3;
-      z-index: 2;
-      transition: 0.5s all;
-      opacity: 0; }
-    .project-content__card:hover::before {
+      opacity: 0;
+      transition: all 0.5s; }
+    .project-content__card--overlay:hover::before {
       opacity: 0.8; }
-  .project-content__card:hover .project-content__card-details {
-    opacity: 1; }
   .project-content__card-details {
-    position: relative;
-    z-index: 5;
-    color: #fff;
-    opacity: 0;
-    text-align: start;
-    padding: 10px 15px; }
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    opacity: 0; }
+    .project-content__card-details:hover {
+      opacity: 1;
+      z-index: 5; }
   .project-content__image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: top;
-    position: absolute;
-    top: 0;
-    left: 0; }
-  .project-content__card-title {
-    font-size: 30px;
-    font-weight: bold;
-    margin: 0; }
-  .project-content__link-buttons-container {
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
-    text-align: center; }
-  .project-content__link-buttons {
-    color: #fff;
-    cursor: pointer;
-    font-size: 1.4rem;
-    padding: 1rem;
-    margin: 0.25rem;
-    min-width: 15rem;
-    transition: all 0.2s ease 0s; }
-  .project-content__link-buttons:hover, .project-content__link-buttons:focus {
-    transform: scale(1.1);
-    box-shadow: 0 0 3px #464646; }
-  .project-content__link-buttons-projects {
-    background-color: #1a1a1a;
-    text-decoration: none; }
+    vertical-align: top; }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .project-content__list {
     grid-template-columns: 1fr; } }
 
 @media (max-width: 768px) {
   .project-content__card {
-    height: 350px; } }
+    height: 350px; }
+  .project-content__image {
+    object-fit: cover; } }
 
 @media (max-width: 576px) {
   .project-content__card {
     height: 200px; }
   .project-content__card-about {
     display: none; }
-  .project-content__link-buttons-container {
-    flex-direction: column; } }
+  .project-content__image {
+    object-position: top; } }
 
 .contact-content {
   text-align: center;

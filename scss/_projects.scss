@@ -15,92 +15,51 @@
   &__card {
     box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2);
     position: relative;
-    width: 100%;
-    height: 350px;
 
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      display: block;
-      background: $primary-color;
-      z-index: 2;
-      transition: 0.5s all;
-      opacity: 0;
+    &--overlay {
+      &::before {
+        content: '\A';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: $primary-color;
+        opacity: 0;
+        transition: all 0.5s;
+      }
+
+      &:hover::before {
+        opacity: 0.8;
+      }
     }
-
-    &:hover::before {
-      opacity: 0.8;
-    }
-  }
-
-  // Add ability to focus card
-  &__card:hover &__card-details {
-    opacity: 1;
   }
 
   &__card-details {
-    position: relative;
-    z-index: 5;
-    color: #fff;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
     opacity: 0;
-    text-align: start;
-    padding: 10px 15px;
+
+    &:hover {
+      opacity: 1;
+      z-index: 5;
+    }
   }
 
   &__image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: top;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
-  &__card-title {
-    font-size: 30px;
-    font-weight: bold;
-    margin: 0;
-  }
-
-  &__card-about {
-    // padding: 10px 15px;
-  }
-
-  &__link-buttons-container {
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
-    text-align: center;
-  }
-
-  &__link-buttons {
-    color: #fff;
-    cursor: pointer;
-    font-size: 1.4rem;
-    padding: 1rem;
-    margin: 0.25rem;
-    min-width: 15rem;
-    transition: all 0.2s ease 0s;
-  }
-
-  &__link-buttons:hover,
-  &__link-buttons:focus {
-    transform: scale(1.1);
-    box-shadow: 0 0 3px #464646;
-  }
-
-  &__link-buttons-projects {
-    background-color: #1a1a1a;
-    text-decoration: none;
+    vertical-align: top;
   }
 }
 
-@media (max-width: $medium-screen) {
+@media (max-width: $large-screen) {
   .project-content {
     &__list {
       grid-template-columns: 1fr;
@@ -112,6 +71,10 @@
   .project-content {
     &__card {
       height: 350px;
+    }
+
+    &__image {
+      object-fit: cover;
     }
   }
 }
@@ -127,8 +90,8 @@
       display: none;
     }
 
-    &__link-buttons-container {
-      flex-direction: column;
+    &__image {
+      object-position: top;
     }
   }
 }
