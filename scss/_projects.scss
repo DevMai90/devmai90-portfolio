@@ -83,7 +83,7 @@
 @media (max-width: $small-screen) {
   .project-content {
     &__card {
-      height: 350px;
+      height: 35rem;
     }
 
     &__image {
@@ -95,7 +95,7 @@
 @media (max-width: $extra-small-screen) {
   .project-content {
     &__card {
-      height: 200px;
+      height: 20rem;
     }
 
     &__card-title {

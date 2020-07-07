@@ -84,7 +84,7 @@
 @keyframes navLinkFade {
   from {
     opacity: 0;
-    transform: translateX(50px); }
+    transform: translateX(5rem); }
   to {
     opacity: 1;
     transform: translateX(0px); } }
@@ -200,13 +200,13 @@
 
 @media (max-width: 768px) {
   .project-content__card {
-    height: 350px; }
+    height: 35rem; }
   .project-content__image {
     object-fit: cover; } }
 
 @media (max-width: 576px) {
   .project-content__card {
-    height: 200px; }
+    height: 20rem; }
   .project-content__card-title {
     font-size: 2rem;
     text-align: center; }
@@ -330,5 +330,5 @@ section:nth-child(even) {
   background-color: #f9f8fd; }
 
 .anchor {
-  padding-top: 60px;
-  margin-top: -60px; }
+  padding-top: 6rem;
+  margin-top: -6rem; }
