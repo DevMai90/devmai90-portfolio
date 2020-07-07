@@ -71,18 +71,26 @@
     margin: 2rem;
   }
 
-  &__connect-card {
-    font-size: 5rem;
-    margin: 1rem;
-    transition: all 0.3s ease 0s;
-    cursor: pointer;
-    max-width: 5rem;
+  &__connect-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
   }
 
-  &__connect-card:hover,
-  // todo not transforming with focus
-  &__connect-card:focus {
-    transform: scale(1.2);
+  &__connect-link {
+    color: #fff;
+    margin: 1rem;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.2);
+    }
+  }
+
+  &__connect-item {
+    width: 8rem;
   }
 }
 
