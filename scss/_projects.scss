@@ -43,6 +43,10 @@
     &:focus {
       opacity: 1;
       z-index: 5;
+
+      .project-content__card-link {
+        visibility: visible;
+      }
     }
   }
 
@@ -61,6 +65,10 @@
     justify-content: center;
     text-align: center;
     padding: 1rem;
+  }
+
+  &__card-link {
+    visibility: hidden;
   }
 }
 

@@ -176,6 +176,8 @@
     .project-content__card-details:hover, .project-content__card-details:active, .project-content__card-details:focus {
       opacity: 1;
       z-index: 5; }
+      .project-content__card-details:hover .project-content__card-link, .project-content__card-details:active .project-content__card-link, .project-content__card-details:focus .project-content__card-link {
+        visibility: visible; }
   .project-content__card-title {
     font-size: 3rem;
     font-weight: bold;
@@ -187,6 +189,8 @@
     justify-content: center;
     text-align: center;
     padding: 1rem; }
+  .project-content__card-link {
+    visibility: hidden; }
 
 @media (max-width: 1200px) {
   .project-content__list {
