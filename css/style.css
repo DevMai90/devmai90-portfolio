@@ -166,7 +166,7 @@
       background: #005ab3;
       opacity: 0;
       transition: all 0.5s; }
-    .project-content__card--overlay:hover::before {
+    .project-content__card--overlay:hover::before, .project-content__card--overlay:active::before, .project-content__card--overlay:focus::before {
       opacity: 0.95; }
   .project-content__image {
     width: 100%;
@@ -183,7 +183,7 @@
     text-align: left;
     padding: 1rem 2rem;
     opacity: 0; }
-    .project-content__card-details:hover {
+    .project-content__card-details:hover, .project-content__card-details:active, .project-content__card-details:focus {
       opacity: 1;
       z-index: 5; }
   .project-content__card-title {

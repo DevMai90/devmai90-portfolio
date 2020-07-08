@@ -31,7 +31,8 @@
       }
 
       &:hover::before,
-      &:active::before {
+      &:active::before,
+      &:focus::before {
         opacity: 0.95;
       }
     }
@@ -55,7 +56,9 @@
     padding: 1rem 2rem;
     opacity: 0;
 
-    &:hover {
+    &:hover,
+    &:active,
+    &:focus {
       opacity: 1;
       z-index: 5;
     }
