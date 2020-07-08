@@ -291,6 +291,9 @@
   .btn--dark {
     background-color: #1a1a1a; }
 
+.element-focus {
+  opacity: 1; }
+
 html {
   box-sizing: border-box;
   font-size: 10px;
