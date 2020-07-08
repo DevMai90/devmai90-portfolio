@@ -198,25 +198,24 @@
     padding: 1rem; }
 
 @media (max-width: 992px) {
+  .project-content__list {
+    width: 90%; }
   .project-content__card-tech {
     display: none; } }
 
 @media (max-width: 768px) {
   .project-content__list {
-    grid-template-columns: 1fr; }
-  .project-content__card {
-    height: 35rem; }
+    grid-template-columns: 1fr;
+    width: 70%; }
   .project-content__image {
     object-fit: cover; } }
 
 @media (max-width: 576px) {
-  .project-content__card {
-    height: 20rem; }
+  .project-content__list {
+    width: 90%; }
   .project-content__card-title {
     font-size: 2rem;
     text-align: center; }
-  .project-content__card-about {
-    display: none; }
   .project-content__card-tech {
     display: none; }
   .project-content__image {

@@ -80,8 +80,9 @@
 @media (max-width: $medium-screen) {
   .project-content {
     &__list {
-      // grid-template-columns: 1fr;
+      width: 90%;
     }
+
     &__card-tech {
       display: none;
     }
@@ -92,10 +93,7 @@
   .project-content {
     &__list {
       grid-template-columns: 1fr;
-    }
-
-    &__card {
-      height: 35rem;
+      width: 70%;
     }
 
     &__image {
@@ -106,17 +104,13 @@
 
 @media (max-width: $extra-small-screen) {
   .project-content {
-    &__card {
-      height: 20rem;
+    &__list {
+      width: 90%;
     }
 
     &__card-title {
       font-size: 2rem;
       text-align: center;
-    }
-
-    &__card-about {
-      display: none;
     }
 
     &__card-tech {
