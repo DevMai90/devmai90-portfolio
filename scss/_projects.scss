@@ -30,7 +30,7 @@
       }
 
       &:hover::before {
-        opacity: 0.9;
+        opacity: 0.95;
       }
     }
   }
@@ -43,6 +43,7 @@
 
   &__card-details {
     color: white;
+    font-size: 1.4rem;
     position: absolute;
     top: 0;
     left: 0;
