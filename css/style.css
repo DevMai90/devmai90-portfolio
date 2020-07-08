@@ -156,24 +156,13 @@
     margin: 1rem;
     position: relative;
     width: 50rem; }
-    .project-content__card--overlay::before {
-      content: '\A';
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      background: #005ab3;
-      opacity: 0;
-      transition: all 0.5s; }
-    .project-content__card--overlay:hover::before, .project-content__card--overlay:active::before, .project-content__card--overlay:focus::before {
-      opacity: 0.95; }
   .project-content__image {
     width: 100%;
     height: 100%;
     vertical-align: top; }
   .project-content__card-details {
     color: white;
+    background-color: rgba(0, 90, 179, 0.95);
     font-size: 1.4rem;
     position: absolute;
     top: 0;
@@ -181,6 +170,7 @@
     height: 100%;
     width: 100%;
     text-align: left;
+    transition: all 0.5s;
     padding: 1rem 2rem;
     opacity: 0; }
     .project-content__card-details:hover, .project-content__card-details:active, .project-content__card-details:focus {
