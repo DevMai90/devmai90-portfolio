@@ -204,14 +204,6 @@
   .project-content__card {
     width: 40rem; } }
 
-@media (max-width: 992px) {
-  .project-content__card {
-    width: 70%; } }
-
-@media (max-width: 768px) {
-  .project-content__card {
-    width: 90%; } }
-
 @media (max-width: 576px) {
   .project-content__card {
     width: 100%; }

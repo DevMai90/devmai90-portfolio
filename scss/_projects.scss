@@ -93,22 +93,6 @@
   }
 }
 
-@media (max-width: $medium-screen) {
-  .project-content {
-    &__card {
-      width: 70%;
-    }
-  }
-}
-
-@media (max-width: $small-screen) {
-  .project-content {
-    &__card {
-      width: 90%;
-    }
-  }
-}
-
 @media (max-width: $extra-small-screen) {
   .project-content {
     &__card {
