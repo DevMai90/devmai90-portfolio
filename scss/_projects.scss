@@ -9,7 +9,7 @@
     flex-wrap: wrap;
     // grid-template-columns: repeat(4, 1fr);
     // gap: 3rem;
-    width: 90%;
+    max-width: 150rem;
     margin: auto;
     // margin-top: 2rem;
   }
@@ -18,7 +18,7 @@
     box-shadow: 2px 4px 8px 0 rgba(70, 70, 70, 0.3);
     margin: 1rem;
     position: relative;
-    width: 40rem;
+    width: 50rem;
 
     &--overlay {
       &::before {
@@ -78,6 +78,18 @@
     justify-content: center;
     text-align: center;
     padding: 1rem;
+  }
+}
+
+@media (max-width: $large-screen) {
+  .project-content {
+    &__list {
+      width: 90%;
+    }
+
+    &__card {
+      width: 40rem;
+    }
   }
 }
 
