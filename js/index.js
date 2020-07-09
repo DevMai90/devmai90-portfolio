@@ -125,9 +125,9 @@ const focusParent = () => {
     });
     link.addEventListener('blur', () => {
       cardList[index].classList.remove('element-focus');
-      link.style.visibility = 'hidden';
     });
   });
 };
 
-focusParent();
+// using CSS focus-within instead
+// focusParent();

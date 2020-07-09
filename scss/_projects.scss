@@ -40,7 +40,8 @@
 
     &:hover,
     &:active,
-    &:focus {
+    &:focus,
+    &:focus-within {
       opacity: 1;
       z-index: 5;
 
