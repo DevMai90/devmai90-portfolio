@@ -16,6 +16,13 @@
     margin: 1rem;
     position: relative;
     width: 50rem;
+    transition: all 0.5s;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.01);
+      box-shadow: 0 0 20px rgba($color: $primary-color, $alpha: 0.95);
+    }
   }
 
   &__image {
@@ -38,7 +45,6 @@
     padding: 1rem 2rem;
     opacity: 0;
 
-    &:hover,
     &:active,
     &:focus,
     &:focus-within {
