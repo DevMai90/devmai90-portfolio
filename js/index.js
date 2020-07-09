@@ -121,9 +121,11 @@ const focusParent = () => {
   cardLinks.forEach((link, index) => {
     link.addEventListener('focus', () => {
       cardList[index].classList.add('element-focus');
+      link.style.visibility = 'visible';
     });
     link.addEventListener('blur', () => {
       cardList[index].classList.remove('element-focus');
+      link.style.visibility = 'hidden';
     });
   });
 };
