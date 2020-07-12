@@ -209,6 +209,8 @@
   .project-content__card-title {
     font-size: 2rem;
     text-align: center; }
+  .project-content__card-about {
+    font-size: 1.2rem; }
   .project-content__card-tech {
     display: none; } }
 
